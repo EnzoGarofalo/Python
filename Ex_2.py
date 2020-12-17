@@ -2,6 +2,20 @@
 # (falso caso contrário). Testar de 1 a 100.
 
 
-def  Éprimo():
 
-    
+
+def  Éprimo(n):
+
+    for i in range(2, n):
+        if(n % i == 0):
+            return False
+        else:
+            return True
+            
+n = 1
+for n in range(n, 101):
+    if Éprimo(n):
+        print ("Este Número: ", n, "é primo")
+    else:
+        print ("Este Número: ", n, " não é primo")   
+        
